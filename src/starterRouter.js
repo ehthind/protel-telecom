@@ -4,19 +4,46 @@ import StarterPage from "./pages/starter/StarterPage.vue";
 import StarterNavbar from "./layout/StarterNavbar.vue";
 import StarterFooter from "./layout/StarterFooter.vue";
 
+import Home from "./pages/Home"
+import AboutUs from "./pages/AboutUs"
+import LearnMore from "./pages/LearnMore"
+import GetQuote from "./pages/GetQuote"
+import Contact from "./pages/Contact"
+
 Vue.use(Router);
 
 export default new Router({
   routes: [
-
     {
       path: "/",
-      name: "starter",
-      components: {default: StarterPage, header: StarterNavbar, footer: StarterFooter},
-      props: {
-        footer: {backgroundColor: 'black'}
-      }
-    }
+      name: "home",
+      components: {default: Home, header: StarterNavbar, footer: StarterFooter},
+      props: {}
+    },
+    {
+      path: "/about",
+      name: "about",
+      components: {default: AboutUs, header: StarterNavbar, footer: StarterFooter},
+      props: {}
+    },
+    {
+      path: "/learn",
+      name: "learn",
+      components: {default: LearnMore, header: StarterNavbar, footer: StarterFooter},
+      props: {}
+    },
+    {
+      path: "/quote",
+      name: "quote",
+      components: {default: GetQuote, header: StarterNavbar, footer: StarterFooter},
+      props: {}
+    },
+    {
+      path: "/contact",
+      name: "contact",
+      components: {default: Contact, header: StarterNavbar, footer: StarterFooter},
+      props: {}
+    },
   ],
   scrollBehavior: (to, from, savedPosition) => {
     if (to.hash) {

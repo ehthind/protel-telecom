@@ -3,17 +3,21 @@
             type="primary"
             menu-classes="ml-auto">
         <template slot-scope="{toggle, isToggled}">
-            <router-link v-popover:popover1 class="navbar-brand" to="/presentation">
-                My Site Name
+             <router-link v-popover:popover1 class="navbar-brand" to="/">
+                Home
             </router-link>
-            <el-popover
-                    ref="popover1"
-                    popper-class="popover"
-                    placement="bottom"
-                    width="200"
-                    trigger="hover">
-                <div class="popover-body">Designed by Invision. Coded by Creative Tim</div>
-            </el-popover>
+             <router-link v-popover:popover1 class="navbar-brand" to="/about">
+                about
+            </router-link>
+             <router-link v-popover:popover1 class="navbar-brand" to="/learn">
+                learn
+            </router-link>
+             <router-link v-popover:popover1 class="navbar-brand" to="/quote">
+                quote
+            </router-link>
+             <router-link v-popover:popover1 class="navbar-brand" to="/contact">
+                contact
+            </router-link>
         </template>
         <template slot="navbar-menu">
             <drop-down tag="li" title="Sample Dropdown">
