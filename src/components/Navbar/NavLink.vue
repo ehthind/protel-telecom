@@ -17,12 +17,12 @@
       }
     },
     computed: {
-      componentType(){
+      componentType () {
         return this.to ? 'router-link' : 'a'
       }
     },
     methods: {
-      closeNav() {
+      closeNav () {
         if (this.close) {
           this.close();
         }
