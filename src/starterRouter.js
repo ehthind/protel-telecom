@@ -9,6 +9,7 @@ import AboutUs from "./pages/AboutUs"
 import LearnMore from "./pages/LearnMore"
 import GetQuote from "./pages/GetQuote"
 import Contact from "./pages/Contact"
+import { start } from "pretty-error";
 
 Vue.use(Router);
 
