@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="page-header page-header-small">
         <parallax class="page-header-image"
-              style="background-image: url('img/bg32.jpg')">
+              style="background-image: url('img/learnMore.jpg')">
         </parallax>
         <div class="content-center">
             <div class="row">
@@ -35,8 +35,7 @@
 <script>
 export default {
   components: {},
-  bodyClass: 'contact-page',
-
+  bodyClass: "contact-page",
 
   props: {},
 

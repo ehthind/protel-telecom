@@ -3,7 +3,13 @@
             type="primary"
             menu-classes="ml-auto">
         <template slot-scope="{toggle, isToggled}">
-             <router-link v-popover:popover1 class="navbar-brand" to="/">
+            <div class="navbar-translate">
+                <a href="#">Protel</a>
+                <navbar-toggle-button @click.native="toggle"></navbar-toggle-button>
+            </div>
+        </template>
+        <template slot="navbar-menu">
+            <router-link v-popover:popover1 class="navbar-brand" to="/">
                 Home
             </router-link>
              <router-link v-popover:popover1 class="navbar-brand" to="/about">
@@ -18,8 +24,6 @@
              <router-link v-popover:popover1 class="navbar-brand" to="/contact">
                 contact
             </router-link>
-        </template>
-        <template slot="navbar-menu">
             <drop-down tag="li" title="Sample Dropdown">
                 <nav-link class="dropdown-item">
                     <i class="now-ui-icons shopping_box"></i> Headers
@@ -31,21 +35,20 @@
 </template>
 
 <script>
-  import { DropDown, NavbarToggleButton, Navbar, NavLink } from '@/components';
-  import { Popover } from 'element-ui'
+import { DropDown, NavbarToggleButton, Navbar, NavLink } from "@/components";
+import { Popover } from "element-ui";
 
-  export default {
-    name: 'main-navbar',
-    components: {
-      DropDown,
-      Navbar,
-      NavbarToggleButton,
-      NavLink,
-      [Popover.name]: Popover
-    }
+export default {
+  name: "main-navbar",
+  components: {
+    DropDown,
+    Navbar,
+    NavbarToggleButton,
+    NavLink,
+    [Popover.name]: Popover
   }
+};
 </script>
 
 <style scoped>
-
 </style>

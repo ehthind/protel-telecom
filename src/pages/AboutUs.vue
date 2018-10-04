@@ -2,7 +2,7 @@
   <div class="wrapper">
         <div class="page-header page-header-small">
             <parallax class="page-header-image"
-                 style="background-image: url('img/bg32.jpg')">
+                 style="background-image: url('img/aboutUs.jpg')">
             </parallax>
             <div class="content-center">
                 <div class="row">
@@ -361,8 +361,15 @@
 </template>
 
 <script>
-import { Card, Button, Badge, InfoSection, FormGroupInput, Checkbox } from '@/components';
-import { Select, Option } from 'element-ui'
+import {
+  Card,
+  Button,
+  Badge,
+  InfoSection,
+  FormGroupInput,
+  Checkbox
+} from "@/components";
+import { Select, Option } from "element-ui";
 
 export default {
   components: {
@@ -373,18 +380,18 @@ export default {
     [Checkbox.name]: Checkbox,
     [FormGroupInput.name]: FormGroupInput,
     [Select.name]: Select,
-    [Option.name]: Option,
+    [Option.name]: Option
   },
-  bodyClass: 'contact-page',
+  bodyClass: "contact-page",
 
   props: {},
 
   data() {
     return {
       form: {
-        firstName: '',
-        email: '',
-        speciality: ''
+        firstName: "",
+        email: "",
+        speciality: ""
       }
     };
   },
