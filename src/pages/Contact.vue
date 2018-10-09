@@ -107,7 +107,7 @@ Vue.use(VueGoogleMaps, {
 });
 export default {
   name: "contact-us",
-  bodyClass: "contact-page",
+  // bodyClass: "contact-page",
   components: {
     InfoSection,
     [Button.name]: Button,

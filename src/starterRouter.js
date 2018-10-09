@@ -18,38 +18,38 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      components: {default: Home, header: StarterNavbar, footer: StarterFooter},
+      components: { default: Home, header: StarterNavbar, footer: StarterFooter },
       props: {}
     },
     {
       path: "/about",
       name: "about",
-      components: {default: AboutUs, header: StarterNavbar, footer: StarterFooter},
+      components: { default: AboutUs, header: StarterNavbar, footer: StarterFooter },
       props: {}
     },
     {
       path: "/learn",
       name: "learn",
-      components: {default: LearnMore, header: StarterNavbar, footer: StarterFooter},
+      components: { default: LearnMore, header: StarterNavbar, footer: StarterFooter },
       props: {}
     },
     {
       path: "/quote",
       name: "quote",
-      components: {default: GetQuote, header: StarterNavbar, footer: StarterFooter},
+      components: { default: GetQuote, header: StarterNavbar, footer: StarterFooter },
       props: {}
     },
     {
       path: "/contact",
       name: "contact",
-      components: {default: Contact, header: StarterNavbar, footer: StarterFooter},
+      components: { default: Contact, header: StarterNavbar, footer: StarterFooter },
       props: {}
-    },
+    }
   ],
   //test push
   scrollBehavior: (to, from, savedPosition) => {
     if (to.hash) {
-      return {selector: to.hash}
+      return { selector: to.hash }
     } else {
       return { x: 0, y: 0 }
     }

@@ -6,10 +6,10 @@
             </parallax>
             <div class="content-center">
                 <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto">
+                    <div class="col-md-8 ml-auto mr-auto d-sm-block">
                         <h1 class="title">Major promotion</h1>
                         <n-button type = "primary">
-                            <i class = "fa fa-heart"></i>More Info
+                            <i class = "fa fa-heart"></i> More Info
                         </n-button>
                     </div>
                 </div>

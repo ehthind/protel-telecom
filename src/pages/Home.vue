@@ -1,8 +1,8 @@
 <template>
     <div class="wrapper">
-        <component v-bind:is="currentPromotion"></component>
-        <div class="section" id = "promotion-section">
-            <div class="about-bussiness-descrption text-center">
+        <component class = "promotion-component" v-bind:is="currentPromotion"></component>
+        <div class="section business-description-section">
+            <div class="text-center">
                 <div class="features-3">
                     <div class="container">
                         <div class="row">
@@ -24,155 +24,187 @@
                 </div>
             </div>
         </div>
-        <div class="section" id = "getting-start-section">
-            <div class="about-description text-center">
-                <div class="features-2">
-                    <div class = "container">
-                        <div class="row">
-                            <div class="col-md-8 mr-auto ml-auto">
-                                <h1 class="title">Getting Started is Simple</h1>
+        <div class="section get-start-section">
+            <div class="features-4">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto text-center">
+                    <h2 class="title">Getting Started is Simple</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-lg-3 d-flex">
+                    <card class="card card-background card-raised" data-background-color 
+                    style="background-image: url('img/bg24.jpg')">
+                        <div class="info">
+                            <div class="icon icon-success">
+                                <i class="now-ui-icons shopping_cart-simple"></i>
                             </div>
-                        </div>
-                    </div>
-                    <div class="section">
-                        <div class="container" id="get-start-service">
-                        <div class="card-deck">
-                            <card class="text-center" type = "pricing">
-                                <div class="icon icon-success">
-                                    <i class="now-ui-icons shopping_cart-simple"></i>
-                                </div>
-                                <h4 class="card-title">Order</h4>
-                                <p class="card-text">Choose a package that suits your business needs,
+                            <div class="descrpition">
+                                <h4 class="info-title">Order</h4>
+                                <p>
+                                    Choose a package that suits your business needs,
                                     speak to a Dial Ready account manager by calling
                                     1-800-555-5555
                                 </p>
-                            </card>
-                            <card class="card-nav-tabs text-center" type = "pricing">
-                                <div class="icon icon-info">
-                                    <i class="now-ui-icons ui-2_settings-90"></i>
-                                </div>
-                                <h4 class="card-title">Configuration</h4>
-                                <p class="card-text">
-                                    Our provisioning team configures your selected VoiP phones, extensions, 
-                                    features and system. Once configured, your phonees are carefully packaged 
-                                    and ready for shipping.
-                                </p>
-                            </card>
-                            <card class="card-nav-tabs text-center" type = "pricing">
-                                <div class="icon icon-primary">
-                                    <i class="now-ui-icons shopping_delivery-fast"></i>
-                                </div>
-                                <h4 class="card-title">Shipping</h4>
-                                <p class="card-text">
-                                    Your business phones are individually labeled with all the details and shipped express right to your location.
-                                </p>
-                            </card>
-                            <card class="card-nav-tabs text-center" type = "pricing">
-                                <div class="icon icon-warning">
-                                    <i class="now-ui-icons emoticons_satisfied"></i>
-                                </div>
-                                <h4 class="card-title">Plug & Use</h4>
-                                <p class="card-text">
-                                    Simply plug in each phone at the designated location and voila. Simple as that.
-                                </p>
-                            </card>
+                            </div>
                         </div>
-                    </div>
+                        <p class="card-text">
+                        </p>
+                    </card>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex">
+                    <card class=" card card-background card-raised" data-background-color 
+                    style="background-image: url('img/bg24.jpg')">
+                        <div class="info">
+                            <div class="icon icon-info">
+                                <i class="now-ui-icons now-ui-icons ui-2_settings-90"></i>
+                            </div>
+                            <div class="descrpition">
+                                <h4 class="info-title">Configeration</h4>
+                                <p>
+                                    Our provisioning team configures your selected VoiP phones, extensions, 
+                                features and system. Once configured, your phonees are carefully packaged 
+                                and ready for shipping.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="card-text">
+                        </p>
+                    </card>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex">
+                    <card class=" card card-background card-raised" data-background-color 
+                    style="background-image: url('img/bg24.jpg')">
+                        <div class="info">
+                            <div class="icon icon-primary">
+                                <i class="now-ui-icons shopping_delivery-fast"></i>
+                            </div>
+                            <div class="descrpition">
+                                <h4 class="info-title">Shipping</h4>
+                                <p>
+                                    Your business phones are individually labeled with all 
+                                    the details and shipped express right to your location.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="card-text">
+                        </p>
+                    </card>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex">
+                    <card class=" card card-background card-raised" data-background-color 
+                    style="background-image: url('img/bg24.jpg')">
+                        <div class="info">
+                            <div class="icon icon-warning">
+                                <i class="now-ui-icons emoticons_satisfied"></i>
+                            </div>
+                            <div class="descrpition">
+                                <h4 class="info-title">Plug & Use</h4>
+                                <p>
+                                    Simply plug in each phone at the designated 
+                                location and voila. Simple as that.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="card-text">
+                        </p>
+                    </card>
                 </div>
             </div>
         </div>
-        <div class="about-description text-center" id = "plan-section">
-                <div class="features-3">
-                    <div class = "container">
-                        <div class="row">
-                            <div class="col-md-8 mr-auto ml-auto">
-                                <h1 class="title">Choose a Plan</h1>
-                            </div>
+    </div>
+        </div>
+        <div class="about-description text-center" data-background-color="black">
+            <div class="features-3">
+                <div class = "container container-fluid">
+                    <div class="row">
+                        <div class="col-md-8 mr-auto ml-auto">
+                            <h1 class="title">Choose a Plan</h1>
                         </div>
-                    <div class="section-space"></div>
-                    <div class="row" id = "plans">
-                        <div class="col-md-4">
-                            <card type="pricing">
-                                <h6 class="category">Basic</h6>
-                                <div class="icon icon-danger">
-                                    <i class="now-ui-icons design_palette"></i>
-                                </div>
-                                <h1 class="card-title">
-                                    <small>$</small>
-                                    29.99
-                                    <small>/month</small>
-                                </h1>
-                                    <ul>
-                                    <li><i class="now-ui-icons ui-1_check text-success"></i>Free Phones</li>
-                                    <li><i class="now-ui-icons ui-1_check text-success"></i>Free <b>Local</b> Calling</li>
-                                    <li><i class="now-ui-icons ui-1_simple-remove text-danger"></i><b>Unlimited</b> Canada & U.S. Calling</li>
-                                    <li><i class="now-ui-icons ui-1_simple-remove text-danger"></i>Conference Bridge Included</li>
-                                    <li><i class="now-ui-icons ui-1_simple-remove text-danger"></i><b>1,000</b> Minutes included for Conference Bridge</li>
-                                    <li><i class="now-ui-icons ui-1_simple-remove text-danger"></i><b>5,000</b> Toll-Free Minutes <b>($250.00 Value)</b> For 6 or more phones</li>
-                                </ul>
-                            </card>
-                        </div>
-                        <div class="col-md-4">
-                            <card type="pricing" color = "gray">
-                                <h6 class="category">Professional</h6>
-                                <div class="icon icon-info">
-                                    <i class="now-ui-icons business_briefcase-24"></i>
-                                </div>
-                                <h1 class="card-title">
-                                    <small>$</small>
-                                    34.99
-                                    <small>/month</small>
-                                </h1>
-                                <ul>
-                                    <li><i class="now-ui-icons ui-1_check text-success"></i>Free Phones</li>
-                                    <li><i class="now-ui-icons ui-1_check text-success"></i>Free <b>Local</b> Calling</li>
-                                    <li><i class="now-ui-icons ui-1_check text-success"></i><b>Unlimited</b> Canada & U.S. Calling</li>
-                                    <li><i class="now-ui-icons ui-1_check text-success"></i><b>Conference Bridge</b> Included</li>
-                                    <li><i class="now-ui-icons ui-1_simple-remove text-danger"></i><b>1,000</b> Minutes included for Conference Bridge</li>
-                                    <li><i class="now-ui-icons ui-1_check text-success"></i><b>5,000</b> Toll-Free Minutes <b>($250.00 Value)</b> For 6 or more phones</li>
-                                </ul>
-                            </card>
-                        </div>
-                        <div class="col-md-4">
-                            <card type="pricing" color="black">
-                                <h6 class="category">Enterprise</h6>
-                                <div class="icon icon-success">
-                                    <i class="now-ui-icons tech_headphones"></i>
-                                </div>
-                                <h1 class="card-title">
-                                    <small>$</small>
-                                    44.99
-                                    <small>/month</small>
-                                </h1>
-                                <ul>
-                                    <li><i class="now-ui-icons ui-1_check text-success"></i>Free Phones</li>
-                                    <li><i class="now-ui-icons ui-1_check text-success"></i>Free <b>Local</b> Calling</li>
-                                    <li><i class="now-ui-icons ui-1_check text-success"></i><b>Unlimited</b> Canada & U.S. Calling</li>
-                                    <li><i class="now-ui-icons ui-1_check text-success"></i><b>Conference Bridge</b> Included</li>
-                                    <li><i class="now-ui-icons ui-1_check text-success"></i><b>1,000</b> Minutes included for Conference Bridge</li>
-                                    <li><i class="now-ui-icons ui-1_check text-success"></i><b>10,000</b> Toll-Free Minutes <b>($500.00 Value)</b> For 6 or more phones</li>
-                                </ul>
-                            </card>
-                        </div>
-                        
                     </div>
-                    <div class="section-space"></div>
+                <div class="section-space"></div>
+                <div class="container container-fluid plan-container d-flex justify-content-around">
+                <div class="row" id = "plans">
+                    <div class="plan col-lg-4">
+                        <card type="pricing">
+                            <h5 class="category">Basic</h5>
+                            <div class="icon icon-danger">
+                                <i class="now-ui-icons design_palette"></i>
+                            </div>
+                            <h1 class="card-title">
+                                <small>$</small>
+                                29.99
+                                <small>/month</small>
+                            </h1>
+                                <ul class="plan-list">
+                                <li><i class="now-ui-icons ui-1_check text-success"></i>Free Phones</li>
+                                <li><i class="now-ui-icons ui-1_check text-success"></i>Free <b>Local</b> Calling</li>
+                                <li><i class="now-ui-icons ui-1_simple-remove text-danger"></i><b>Unlimited</b> Canada & U.S. Calling</li>
+                                <li><i class="now-ui-icons ui-1_simple-remove text-danger"></i>Conference Bridge Included</li>
+                                <li><i class="now-ui-icons ui-1_simple-remove text-danger"></i><b>1,000</b> Minutes included for Conference Bridge</li>
+                                <li><i class="now-ui-icons ui-1_simple-remove text-danger"></i><b>5,000</b> Toll-Free Minutes <b>($250.00 Value)</b> For 6 or more phones</li>
+                            </ul>
+                        </card>
+                    </div>
+                    <div class="plan col-lg-4">
+                        <card type="pricing">
+                            <h5 class="category">Professional</h5>
+                            <div class="icon icon-info">
+                                <i class="now-ui-icons business_briefcase-24"></i>
+                            </div>
+                            <h1 class="card-title">
+                                <small>$</small>
+                                34.99
+                                <small>/month</small>
+                            </h1>
+                            <ul class="plan-list">
+                                <li><i class="now-ui-icons ui-1_check text-success"></i>Free Phones</li>
+                                <li><i class="now-ui-icons ui-1_check text-success"></i>Free <b>Local</b> Calling</li>
+                                <li><i class="now-ui-icons ui-1_check text-success"></i><b>Unlimited</b> Canada & U.S. Calling</li>
+                                <li><i class="now-ui-icons ui-1_check text-success"></i><b>Conference Bridge</b> Included</li>
+                                <li><i class="now-ui-icons ui-1_simple-remove text-danger"></i><b>1,000</b> Minutes included for Conference Bridge</li>
+                                <li><i class="now-ui-icons ui-1_check text-success"></i><b>5,000</b> Toll-Free Minutes <b>($250.00 Value)</b> For 6 or more phones</li>
+                            </ul>
+                        </card>
+                    </div>
+                    <div class="plan col-lg-4">
+                        <card type="pricing">
+                            <h5 class="category">Enterprise</h5>
+                            <div class="icon icon-success">
+                                <i class="now-ui-icons tech_headphones"></i>
+                            </div>
+                            <h1 class="card-title">
+                                <small>$</small>
+                                44.99
+                                <small>/month</small>
+                            </h1>
+                            <ul class="plan-list">
+                                <li><i class="now-ui-icons ui-1_check text-success"></i>Free Phones</li>
+                                <li><i class="now-ui-icons ui-1_check text-success"></i>Free <b>Local</b> Calling</li>
+                                <li><i class="now-ui-icons ui-1_check text-success"></i><b>Unlimited</b> Canada & U.S. Calling</li>
+                                <li><i class="now-ui-icons ui-1_check text-success"></i><b>Conference Bridge</b> Included</li>
+                                <li><i class="now-ui-icons ui-1_check text-success"></i><b>1,000</b> Minutes included for Conference Bridge</li>
+                                <li><i class="now-ui-icons ui-1_check text-success"></i><b>10,000</b> Toll-Free Minutes <b>($500.00 Value)</b> For 6 or more phones</li>
+                            </ul>
+                        </card>
+                    </div>
+                    
+                </div>
+                </div>
+                <div class="section-space"></div>
                     <div class="row">
                         <div class="ml-auto mr-auto">
                             <n-button type = "info" v-on:click.native = "showPlanDetails" size = "lg" round to = "/about">Learn More</n-button>
                         </div>
                     </div>
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="" id = "learn-more-about-plans-section">
+        <div class="section plans-detaions-section">
             <component :is="plansDetailsComponent"></component>
         </div>
-</div>
-
-    
-    
+    </div>
 </template>
 
 <script>
@@ -218,4 +250,19 @@ export default {
 </script>
 
 <style scoped>
+.wrapper {
+  font-size: 20px;
+  position: relative;
+  top: 15px;
+}
+.col-md-6 col-lg-3 {
+  font-size: 16px;
+}
+.get-start-section h4,
+.get-start-section p {
+  color: #ffffff;
+}
+.plans-detaions-section {
+  background: light-gray;
+}
 </style>

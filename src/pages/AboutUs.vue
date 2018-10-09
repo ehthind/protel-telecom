@@ -382,7 +382,6 @@ export default {
     [Select.name]: Select,
     [Option.name]: Option
   },
-  bodyClass: "contact-page",
 
   props: {},
 

@@ -1,6 +1,6 @@
 <template>
-<div class="container container-fluid plan-container">
-<div class="container container-fluid">
+<div class="wrapper  plan-container">
+<div class="container">
     <div class="row">
         <div class="col-md-8 mr-auto ml-auto">
             <h1 class="title text-center">
@@ -10,7 +10,7 @@
     </div>
     
     <div class="row">
-        <el-table class="table-striped text-center" height = "800" :data="tableData">
+        <el-table class="table-striped text-center plan-details-table" height = 800 :data="tableData">
         <el-table-column header-align = "center" prop="serviceTitle" label="Service"></el-table-column>
         <el-table-column header-align = "center" prop="basicDescription" label="BASIC">
             <template slot-scope="scope">
@@ -46,9 +46,13 @@
     </div>
     <div class="section-space"></div>
         <div class="row">
-            <div class="ml-auto mr-auto">
-                <router-link v-popover:popover1 class="navbar-brand" to="/quote">
-                <h3 type = "title" class = "bg-info text-white"><u>GET YOUR INSTANT QUOTE</u></h3>
+            <div class=" ml-auto mr-auto">
+                <router-link to="/quote">
+                  <h3>
+                    <n-button type = "link" class = "bg-info text-white" round>
+                      <u>GET YOUR INSTANT QUOTE</u>
+                    </n-button>
+                  </h3>
                 </router-link>
             </div>
         </div>
@@ -56,16 +60,24 @@
 </div>
 </template>
 <style scoped>
-.plan-container {
-  background: url("/img/bg24.jpg") no-repeat;
+.wrapper {
+  font-size: 20px;
+}
+.plan-details-table {
+  font-size: 20px;
+}
+.btn-info u {
+  font-size: 15px;
 }
 </style>
 <script>
 import { Table, TableColumn } from "element-ui";
+import { Button } from "@/components";
 export default {
   components: {
     [Table.name]: Table,
-    [TableColumn.name]: TableColumn
+    [TableColumn.name]: TableColumn,
+    [Button.name]: Button
   },
   data() {
     return {
@@ -125,7 +137,7 @@ export default {
           enterpriceDescription: [true, ""]
         },
         {
-          serviceTitle: "Toll-Free Usage (￥ 0.05 each additional minute)",
+          serviceTitle: "Toll-Free Usage ($ 0.05 each additional minute)",
           basicDescription: [
             true,
             "2,500 Minutes Included Per Month ($125.00 Value) "
@@ -237,9 +249,9 @@ export default {
         },
         {
           serviceTitle: "Custom Logo on Phones",
-          basicDescription: [false, ""],
-          professionalDescription: [false, ""],
-          enterpriceDescription: [false, ""]
+          basicDescription: [false, "N / A"],
+          professionalDescription: [false, "N / A"],
+          enterpriceDescription: [false, "Fee Applies"]
         },
         {
           serviceTitle: "Fax-to-Email",

@@ -35,7 +35,6 @@
 <script>
 export default {
   components: {},
-  bodyClass: "contact-page",
 
   props: {},
 
