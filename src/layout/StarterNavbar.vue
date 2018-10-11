@@ -1,7 +1,8 @@
 <template>
     <navbar position="fixed"
             type="primary"
-            menu-classes="ml-auto">
+            menu-classes="ml-auto"
+            id = "navbar">
         <template slot-scope="{toggle, isToggled}">
             <div class="navbar-translate">
                 <a href="#">Protel</a>
@@ -51,4 +52,7 @@ export default {
 </script>
 
 <style scoped>
+#navbar {
+  font-size: 20px;
+}
 </style>

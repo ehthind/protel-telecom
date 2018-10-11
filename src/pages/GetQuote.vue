@@ -141,7 +141,7 @@ export default {
       let phoneRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
       this.validPhone = phoneRegex.test(this.form.phoneNumber);
     },
-    titlizeStr: function(str) {
+    normalizeStr: function(str) {
       let str0 = str.toLowerCase();
       return str0.replace(/\b\w/g, function(l) {
         return l.toUpperCase();
@@ -164,7 +164,7 @@ export default {
         this.validPhone
       ) {
         const userJSObj = {
-          userName: this.titlizeStr(this.form.name),
+          userName: this.normalizeStr(this.form.name),
           emailAddress: this.form.emailAddress,
           phoneNumber: this.form.phoneNumber,
           companyName: this.form.companyName

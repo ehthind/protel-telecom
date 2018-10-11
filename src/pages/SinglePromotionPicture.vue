@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <div class="page-header page-header-small">
+            <div class="page-header page-header-small">
             <parallax class="page-header-image"
                 style="background-image: url('img/bg32.jpg')">
             </parallax>
@@ -8,9 +8,10 @@
                 <div class="row">
                     <div class="col-md-8 ml-auto mr-auto d-sm-block">
                         <h1 class="title">Major promotion</h1>
-                        <n-button type = "primary">
-                            <i class = "fa fa-heart"></i> More Info
-                        </n-button>
+                        <router-link to = "/learn" class = "btn btn-primary btn-lg">
+                            <i class="fa fa-heart">More info</i>
+                        </router-link>
+                        
                     </div>
                 </div>
             </div>
@@ -34,3 +35,4 @@ export default {
   methods: {}
 };
 </script>
+
