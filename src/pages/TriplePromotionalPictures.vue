@@ -11,7 +11,7 @@
       </el-carousel-item>
   </el-carousel> -->
   <div class="page-header-small">
-    <el-carousel height="70vh">
+    <el-carousel height="100vh">
         <el-carousel-item>
             <div class="page-header header-filter">
                 <div class="page-header-image"

@@ -8,23 +8,24 @@
             </h1>
         </div>
     </div>
-    
+    <hr>
     <div class="row">
         <el-table class="table-striped text-center plan-details-table" height = 800 :data="tableData">
-        <el-table-column header-align = "center" prop="serviceTitle" label="Service"></el-table-column>
-        <el-table-column header-align = "center" prop="basicDescription" label="BASIC">
+        <el-table-column class="plan-details-column" header-align = "center" prop="serviceTitle" label="Service" style="
+  word-break= 'break-all'"></el-table-column>
+        <el-table-column class="plan-details-column" header-align = "center" prop="basicDescription" label="BASIC">
             <template slot-scope="scope">
                 <i class="now-ui-icons ui-1_check text-success" v-if = "basicSupport(scope.row)"></i>
                 <div class="plan-details">{{scope.row.basicDescription[1]}}</div>
             </template>
         </el-table-column>
-        <el-table-column header-align = "center" prop="professionalDescription" label="PROFESSIONAL">
+        <el-table-column class="plan-details-column" header-align = "center" prop="professionalDescription" label="PROFESSIONAL">
             <template slot-scope="scope" >
                 <i class="now-ui-icons ui-1_check text-success" v-if = "professionalSupport(scope.row)"></i>
                 <div class="plan-details">{{scope.row.professionalDescription[1]}}</div>
             </template>
         </el-table-column>
-        <el-table-column header-align = "center" prop="enterpriceDescription" label="ENTERPRISE">
+        <el-table-column class="plan-details-column" header-align = "center" prop="enterpriceDescription" label="ENTERPRISE">
             <template slot-scope="scope" >
                 <i class="now-ui-icons ui-1_check text-success" v-if = "enterpriseSupport(scope.row)"></i>
                 <div class="plan-details">{{scope.row.enterpriceDescription[1]}}</div>
@@ -60,16 +61,20 @@
 </div>
 </template>
 <style scoped>
-.wrapper {
-  font-size: 20px;
-}
 .plan-details-table {
   font-size: 20px;
 }
+
 .btn-info u {
   font-size: 15px;
 }
 </style>
+<style>
+.el-table .cell {
+  word-break: normal;
+}
+</style>
+
 <script>
 import { Table, TableColumn } from "element-ui";
 import { Button } from "@/components";
@@ -83,7 +88,7 @@ export default {
     return {
       tableData: [
         {
-          serviceTitle: "Includes Complimentary phone Rentals**",
+          serviceTitle: "Includes Complimentary Phone Rentals**",
           basicDescription: [true, "Free phone rental on 3 or 5 year contract"],
           professionalDescription: [
             true,

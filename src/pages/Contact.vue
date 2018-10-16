@@ -14,7 +14,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 d-flex">
-                            <card type="background" raised class="picture-of-phone"
+                            <card type="background" class="picture-of-phone" raised rounded
                                   style="background-image: url('img/project8.jpg')">
                                 <h2 class="card-title">Should be a picture of phone</h2>
                                 <p class="card-description">

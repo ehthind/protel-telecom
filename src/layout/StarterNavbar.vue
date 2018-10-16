@@ -2,27 +2,26 @@
     <navbar position="fixed"
             type="primary"
             menu-classes="ml-auto"
-            id = "navbar">
-        <template slot-scope="{toggle, isToggled}">
+            id = "">
             <div class="navbar-translate">
                 <a href="#">Protel</a>
-                <navbar-toggle-button @click.native="toggle"></navbar-toggle-button>
             </div>
-        </template>
-        <template slot="navbar-menu">
-            <router-link v-popover:popover1 class="navbar-brand" to="/">
+            
+        <template slot="navbar-menu" id = "navbar">
+            
+            <router-link v-popover:popover1 class="navbar-brand text-center" to="/">
                 Home
             </router-link>
-             <router-link v-popover:popover1 class="navbar-brand" to="/about">
+             <router-link v-popover:popover1 class="navbar-brand text-center" to="/about">
                 about
             </router-link>
-             <router-link v-popover:popover1 class="navbar-brand" to="/learn">
+             <router-link v-popover:popover1 class="navbar-brand text-center" to="/learn">
                 learn
             </router-link>
-             <router-link v-popover:popover1 class="navbar-brand" to="/quote">
+             <router-link v-popover:popover1 class="navbar-brand text-center" to="/quote">
                 quote
             </router-link>
-             <router-link v-popover:popover1 class="navbar-brand" to="/contact">
+             <router-link v-popover:popover1 class="navbar-brand text-center" to="/contact">
                 contact
             </router-link>
             <drop-down tag="li" title="Sample Dropdown">

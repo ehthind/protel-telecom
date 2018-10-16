@@ -38,7 +38,7 @@
         <!-- start of get start section -->
         <div class="section get-start-section">
             <div class="features-4">
-                <div class="container get-start-container">
+                <div class="container-fluid get-start-container">
                     <div class="row">
                         <div class="col-md-8 ml-auto mr-auto text-center">
                             <h2 class="title">Getting Started is Simple</h2>
@@ -132,16 +132,16 @@
         <!-- start of plan section -->
         <div class="section plan-section" data-background-color="black">
             <div class="features-3">
-                <div class = "container container-fluid">
+                <div class = "container">
                     <div class="row">
                         <div class="col-md-8 mr-auto ml-auto">
                             <h1 class="title">Choose a Plan</h1>
                         </div>
                     </div>
                 <div class="section-space"></div>
-                <div class="container container-fluid plan-container d-flex justify-content-around">
+                <div class="container plan-container">
                 <div class="row" id = "plans">
-                    <div class="plan col-lg-4">
+                    <div class="plan col-lg-4 d-flex">
                         <card type="pricing">
                             <h5 class="category">Basic</h5>
                             <div class="icon icon-danger">
@@ -162,7 +162,7 @@
                             </ul>
                         </card>
                     </div>
-                    <div class="plan col-lg-4">
+                    <div class="plan col-lg-4 d-flex">
                         <card type="pricing">
                             <h5 class="category">Professional</h5>
                             <div class="icon icon-info">
@@ -183,7 +183,7 @@
                             </ul>
                         </card>
                     </div>
-                    <div class="plan col-lg-4">
+                    <div class="plan col-lg-4 d-flex">
                         <card type="pricing">
                             <h5 class="category">Enterprise</h5>
                             <div class="icon icon-success">
@@ -220,7 +220,9 @@
 
         <!-- star of plan table section -->
         <div class="section plans-details-section">
-            <component :is="plansDetailsComponent"></component>
+            <div class="features-5">
+                <component :is="plansDetailsComponent"></component>
+            </div>
         </div>
         <!-- end of plan table section -->
     </div>
@@ -270,22 +272,24 @@ export default {
 
 <style scoped>
 .wrapper {
-  font-size: 20px;
+  /* font-size: 20px; */
   position: relative;
   top: 15px;
 }
 .col-md-6 col-lg-3 {
   font-size: 16px;
 }
-/* styling the get start section is a problem */
-/* .get-start-row {
-  width: 120%;
-} */
+
 .get-start-section h4,
 .get-start-section p {
   color: #ffffff;
 }
+
 .plans-details-section {
   background: mintcream;
 }
+
+/* .container {
+  max-width: 1500px;
+} */
 </style>
