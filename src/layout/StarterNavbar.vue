@@ -1,10 +1,9 @@
 <template>
-    <navbar position="fixed"
-            type="primary"
-            menu-classes="ml-auto"
-            id = "">
+    <navbar position="fixed" menu-classes="ml-auto" style = "background-color: #26387b">
             <div class="navbar-translate">
-                <a href="#">Protel</a>
+                <router-link to = "/">
+                    <img :src="companyImagePath" alt="dial-ready-logo" class="company-logo">
+                </router-link>
             </div>
             
         <template slot="navbar-menu" id = "navbar">
@@ -46,12 +45,20 @@ export default {
     NavbarToggleButton,
     NavLink,
     [Popover.name]: Popover
+  },
+  data() {
+    return {
+      companyImagePath: "/img/dialready logo.png"
+    };
   }
 };
 </script>
 
 <style scoped>
-#navbar {
+router-link {
   font-size: 20px;
+}
+.company-logo {
+  height: 40px;
 }
 </style>

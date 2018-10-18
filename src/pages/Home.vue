@@ -140,72 +140,94 @@
                     </div>
                 <div class="section-space"></div>
                 <div class="container plan-container">
-                <div class="row" id = "plans">
-                    <div class="plan col-lg-4 d-flex">
-                        <card type="pricing">
-                            <h5 class="category">Basic</h5>
-                            <div class="icon icon-danger">
-                                <i class="now-ui-icons design_palette"></i>
-                            </div>
-                            <h1 class="card-title">
-                                <small>$</small>
-                                29.99
-                                <small>/month</small>
-                            </h1>
+                    <div class="row" id = "plans">
+                        <!-- start of first plan description -->
+                        <div class="plan col-lg-4 d-flex">
+                            <card type="pricing">
+                                <h5 class="category">Basic</h5>
+                                <div class="icon icon-danger">
+                                    <i class="now-ui-icons design_palette"></i>
+                                </div>
+                                <h1 class="card-title">
+                                    <small>$</small>
+                                    29.99
+                                    <small>/month</small>
+                                </h1>
+                                    <ul class="plan-list">
+                                    <li><i class="now-ui-icons ui-1_check text-success"></i>Free Phones</li>
+                                    <li><i class="now-ui-icons ui-1_check text-success"></i>Free <b>Local</b> Calling</li>
+                                    <li>
+                                        <i class="now-ui-icons ui-1_simple-remove text-danger"></i>
+                                        <b>Unlimited</b> Canada & U.S. Calling<br>
+                                    </li>
+                                    <li>
+                                        <i class="now-ui-icons ui-1_simple-remove text-danger"></i>
+                                        Conference Bridge Included <br>
+                                    </li>
+                                    <li>
+                                        <i class="now-ui-icons ui-1_simple-remove text-danger"></i>
+                                        <b>1,000</b> Minutes included for Conference Bridge <br>
+                                    </li>
+                                    <li>
+                                        <i class="now-ui-icons ui-1_simple-remove text-danger"></i>
+                                        <b>5,000</b> Toll-Free Minutes 
+                                        <b>($250.00 Value)</b> 
+                                        For 6 or more phones
+                                    </li>
+                                </ul>
+                            </card>
+                        </div>
+                        <!-- end of first plan description -->
+
+                        <!-- start of second plan description -->
+                        <div class="plan col-lg-4 d-flex">
+                            <card type="pricing">
+                                <h5 class="category">Professional</h5>
+                                <div class="icon icon-info">
+                                    <i class="now-ui-icons business_briefcase-24"></i>
+                                </div>
+                                <h1 class="card-title">
+                                    <small>$</small>
+                                    34.99
+                                    <small>/month</small>
+                                </h1>
                                 <ul class="plan-list">
-                                <li><i class="now-ui-icons ui-1_check text-success"></i>Free Phones</li>
-                                <li><i class="now-ui-icons ui-1_check text-success"></i>Free <b>Local</b> Calling</li>
-                                <li><i class="now-ui-icons ui-1_simple-remove text-danger"></i><b>Unlimited</b> Canada & U.S. Calling</li>
-                                <li><i class="now-ui-icons ui-1_simple-remove text-danger"></i>Conference Bridge Included</li>
-                                <li><i class="now-ui-icons ui-1_simple-remove text-danger"></i><b>1,000</b> Minutes included for Conference Bridge</li>
-                                <li><i class="now-ui-icons ui-1_simple-remove text-danger"></i><b>5,000</b> Toll-Free Minutes <b>($250.00 Value)</b> For 6 or more phones</li>
-                            </ul>
-                        </card>
+                                    <li><i class="now-ui-icons ui-1_check text-success"></i>Free Phones</li>
+                                    <li><i class="now-ui-icons ui-1_check text-success"></i>Free <b>Local</b> Calling</li>
+                                    <li><i class="now-ui-icons ui-1_check text-success"></i><b>Unlimited</b> Canada & U.S. Calling</li>
+                                    <li><i class="now-ui-icons ui-1_check text-success"></i><b>Conference Bridge</b> Included</li>
+                                    <li><i class="now-ui-icons ui-1_check text-success"></i><b>5,000</b> Toll-Free Minutes <b>($250.00 Value)</b> For 6 or more phones</li>
+                                    <li><i class="now-ui-icons ui-1_simple-remove text-danger"></i><b>1,000</b> Minutes included for Conference Bridge</li>
+                                </ul>
+                            </card>
+                        </div>
+                        <!-- end of second plan description -->
+
+                        <!-- start of third plan description -->
+                        <div class="plan col-lg-4 d-flex">
+                            <card type="pricing">
+                                <h5 class="category">Enterprise</h5>
+                                <div class="icon icon-success">
+                                    <i class="now-ui-icons tech_headphones"></i>
+                                </div>
+                                <h1 class="card-title">
+                                    <small>$</small>
+                                    44.99
+                                    <small>/month</small>
+                                </h1>
+                                <ul class="plan-list">
+                                    <li><i class="now-ui-icons ui-1_check text-success"></i>Free Phones</li>
+                                    <li><i class="now-ui-icons ui-1_check text-success"></i>Free <b>Local</b> Calling</li>
+                                    <li><i class="now-ui-icons ui-1_check text-success"></i><b>Unlimited</b> Canada & U.S. Calling</li>
+                                    <li><i class="now-ui-icons ui-1_check text-success"></i><b>Conference Bridge</b> Included</li>
+                                    <li><i class="now-ui-icons ui-1_check text-success"></i><b>1,000</b> Minutes included for Conference Bridge</li>
+                                    <li><i class="now-ui-icons ui-1_check text-success"></i><b>10,000</b> Toll-Free Minutes <b>($500.00 Value)</b> For 6 or more phones</li>
+                                </ul>
+                            </card>
+                        </div>
+                        <!-- start of third plan description -->
+                        
                     </div>
-                    <div class="plan col-lg-4 d-flex">
-                        <card type="pricing">
-                            <h5 class="category">Professional</h5>
-                            <div class="icon icon-info">
-                                <i class="now-ui-icons business_briefcase-24"></i>
-                            </div>
-                            <h1 class="card-title">
-                                <small>$</small>
-                                34.99
-                                <small>/month</small>
-                            </h1>
-                            <ul class="plan-list">
-                                <li><i class="now-ui-icons ui-1_check text-success"></i>Free Phones</li>
-                                <li><i class="now-ui-icons ui-1_check text-success"></i>Free <b>Local</b> Calling</li>
-                                <li><i class="now-ui-icons ui-1_check text-success"></i><b>Unlimited</b> Canada & U.S. Calling</li>
-                                <li><i class="now-ui-icons ui-1_check text-success"></i><b>Conference Bridge</b> Included</li>
-                                <li><i class="now-ui-icons ui-1_simple-remove text-danger"></i><b>1,000</b> Minutes included for Conference Bridge</li>
-                                <li><i class="now-ui-icons ui-1_check text-success"></i><b>5,000</b> Toll-Free Minutes <b>($250.00 Value)</b> For 6 or more phones</li>
-                            </ul>
-                        </card>
-                    </div>
-                    <div class="plan col-lg-4 d-flex">
-                        <card type="pricing">
-                            <h5 class="category">Enterprise</h5>
-                            <div class="icon icon-success">
-                                <i class="now-ui-icons tech_headphones"></i>
-                            </div>
-                            <h1 class="card-title">
-                                <small>$</small>
-                                44.99
-                                <small>/month</small>
-                            </h1>
-                            <ul class="plan-list">
-                                <li><i class="now-ui-icons ui-1_check text-success"></i>Free Phones</li>
-                                <li><i class="now-ui-icons ui-1_check text-success"></i>Free <b>Local</b> Calling</li>
-                                <li><i class="now-ui-icons ui-1_check text-success"></i><b>Unlimited</b> Canada & U.S. Calling</li>
-                                <li><i class="now-ui-icons ui-1_check text-success"></i><b>Conference Bridge</b> Included</li>
-                                <li><i class="now-ui-icons ui-1_check text-success"></i><b>1,000</b> Minutes included for Conference Bridge</li>
-                                <li><i class="now-ui-icons ui-1_check text-success"></i><b>10,000</b> Toll-Free Minutes <b>($500.00 Value)</b> For 6 or more phones</li>
-                            </ul>
-                        </card>
-                    </div>
-                    
-                </div>
                 </div>
                 <div class="section-space"></div>
                     <div class="row">
@@ -274,10 +296,10 @@ export default {
 .wrapper {
   /* font-size: 20px; */
   position: relative;
-  top: 15px;
 }
-.col-md-6 col-lg-3 {
-  font-size: 16px;
+
+.container-fluid {
+  padding: 0 5%;
 }
 
 .get-start-section h4,
