@@ -36,9 +36,9 @@
         <!-- end of business description -->
         
         <!-- start of get start section -->
-        <div class="section get-start-section">
+        <div class="section get-start-section" style="background: brown">
             <div class="features-4">
-                <div class="container-fluid get-start-container">
+                <div class="container-fluid get-start-container" >
                     <div class="row">
                         <div class="col-md-8 ml-auto mr-auto text-center">
                             <h2 class="title">Getting Started is Simple</h2>

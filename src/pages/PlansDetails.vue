@@ -62,7 +62,7 @@
 </template>
 <style scoped>
 .plan-details-table {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .btn-info u {
