@@ -98,6 +98,9 @@ import { Button, FormGroupInput } from "@/components";
 import Vue from "vue";
 import { InputNumber } from "element-ui";
 
+const env = require("env2")("../../.env");
+console.log(env);
+
 export default {
   // bodyClass: "contact-page",
   components: {

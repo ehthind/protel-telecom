@@ -1,0 +1,9 @@
+Some one has just send your an email for requiring your contact
+
+Here is the details
+
+First Name:         {{firstName}}
+last Name:          {{lastName}}
+Business Email:     {{businessEmail}}
+requiring service:  {{serviceType}}
+comments:           {{comments}}

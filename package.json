@@ -14,11 +14,13 @@
     "element-ui": "^2.4.5",
     "nouislider": "^11.1.0",
     "register-service-worker": "^1.0.0",
+    "sendemail": "^3.4.0",
     "vue": "^2.5.17",
     "vue-lazyload": "^1.2.6",
     "vue-router": "^3.0.1",
     "vue2-google-maps": "^0.9.6",
-    "vue2-transitions": "^0.2.3"
+    "vue2-transitions": "^0.2.3",
+    "env2": "^2.2.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0",
@@ -27,6 +29,7 @@
     "@vue/cli-service": "^3.0.0",
     "@vue/eslint-config-prettier": "^3.0.0",
     "babel-plugin-component": "^1.1.0",
+    "env2": "^2.2.2",
     "node-sass": "^4.9.3",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.5.17"

@@ -1,0 +1,8 @@
+Some one has just send your an email for requesting a Quote
+
+Here is the details
+
+Customer Name: {{name}}
+Email Address: {{email}}
+Company:       {{company}}
+Phone Number:  {{phoneNumber}}
