@@ -98,8 +98,14 @@ import { Button, FormGroupInput } from "@/components";
 import Vue from "vue";
 import { InputNumber } from "element-ui";
 
-const env = require("env2")("../../.env");
-console.log(env);
+const env = require("env2")("./../../.env"); //no matter how I chage the path, it works
+if (env) {
+  console.log("env is loaded");
+  console.log(process.env); //return an object, but seems to be empty
+  console.log(process.env.AWS_SECRET_ACCESS_KEY); //returned undefined, not accessible 
+} else {
+  console.log("failed to load .env file"); // as long as path is not empty, never go here
+}
 
 export default {
   // bodyClass: "contact-page",
