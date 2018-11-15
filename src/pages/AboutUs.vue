@@ -3,7 +3,7 @@
         <!-- start of page header section -->
         <div class="page-header page-header-small">
             <parallax class="page-header-image"
-                 style="background-image: url('img/aboutUs.jpg')">
+                 :style="{'background-image': 'url(' + aboutUsImg + ')'}">
             </parallax>
             <div class="content-center">
                 <div class="row">
@@ -116,6 +116,7 @@ export default {
 
   data() {
     return {
+        aboutUsImg: "img/protel-imgs/learn_more_dial_ready.png",
       saleTeamImagePath: "/img/bg sales team.jpg",
       technicalSupportTeamPath: "/img/bg technical support team.png",
       customerSupportTeamPath: "/img/bg customer support team.jpg"

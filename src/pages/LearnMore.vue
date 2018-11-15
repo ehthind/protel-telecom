@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
         <!-- start of page header -->
-        <div class="header-1">
+        <div class="header-1" :style="{'background-image': 'url(' + headerImgUrl + ')'}">
             <div class="page-header header-filter">
                 <div class="page-header-image"></div>
                 <div class="content-center">
@@ -21,33 +21,9 @@
         <!-- end of page header -->
 
         <!-- star of our advantage section -->
-        <div class="features-7 section-image our-advantage">
-            <div class="col-md-8 mr-auto ml-auto text-center">
-                <h2 class="title">THERE ARE MANY OPTIONS FOR A BUSINESS PHONE PROVIDER. </h2>
-                <h3 class="title text-primary">HERE'S WHAT MAKES DIAL REAY DIFFER FROM THE REST.</h3>
-            </div>
-            <div class="container-fluid">
-                <div class="row d-flex align-items-center">
-                    <div class="col-lg-3 col-md-6 col-sm-8 ml-auto mr-auto ml-auto col-md-12 ml-auto mr-auto ">
-                            <card type="pricing">
-                                <ul class="plan-list">
-                                    <li><i class="now-ui-icons ui-1_check text-success"></i>Personalized Service</li>
-                                    <li><i class="now-ui-icons ui-1_check text-success"></i>Customized Programming</li>
-                                    <li><i class="now-ui-icons ui-1_check text-success"></i>Exceptional Customer Service</li>
-                                    <li><i class="now-ui-icons ui-1_check text-success"></i>FREE PHONES</li>
-                                    <li><i class="now-ui-icons ui-1_check text-success"></i>Super VoiP Quality</li>
-                                    <li><i class="now-ui-icons ui-1_check text-success"></i>Unlimited Nationwide Calling</li>
-                                    <li><i class="now-ui-icons ui-1_check text-success"></i>Easy Activation</li>
-                                </ul>
-                            </card>
-                    </div>
-                    <div class="col-lg-7 mr-auto col-md-12 ml-auto">
-                        <div class="image-container">
-                            <img v-lazy="'img/ipad3.png'" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        
+        <div class="container-fluid our-advantage">
+            <img :src="ourAdvantageImg" alt="">
         </div>
         <!-- end of our advantage section -->
 
@@ -216,19 +192,9 @@
         <!-- end of floating options -->
         <div class="presentation-page">
             <div class="section section-basic-components">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="image-container">
-                            <img src="/img/ipad.png" alt="" class = "components-macbook">
-                            <img src="/img/presentation-page/table.jpg" alt="" class = "table-img">
-                            <img src="/img/presentation-page/share-btn.jpg" alt="" class = "share-btn-img">
-                            <img src="/img/presentation-page/coloured-card.jpg" alt="" class = "coloured-card-btn-img">
-                            <img src="/img/presentation-page/social-row.jpg" alt="" class = "social-img">
-                            <img src="/img/presentation-page/linkedin-btn.jpg" alt="" class = "linkedin-btn-img">
-                            <img src="img/presentation-page/social-row.jpg" alt="social row" class="social-img">
-                        </div>
-                    </div>
+            <div class="container-fluid">
+                <div class="col-md-10 mx-auto">
+                    <img :src="cloudBaseOptionsImg" alt="cloud based options">
                 </div>
             </div>
         </div>
@@ -249,6 +215,9 @@ export default {
 
   data() {
     return {
+        headerImgUrl: "img/protel-imgs/learn_more_dial_ready.png",
+        ourAdvantageImg: "img/protel-imgs/learn_more_dial_ready.png",
+        cloudBaseOptionsImg: "img/protel-imgs/cloud_based_options.png",
       image01Path: "/img/bg38.jpg",
       bulyPhoneSystemImgPath: "/img/bg bulky complexity.jpg",
       spaceSavingImgPath: "/img/bg space saving.jpg",
@@ -263,13 +232,23 @@ export default {
 
 <style scoped>
 .page-header-image {
-  background-image: url("/img/bg16.jpg");
+  background-repeat: no-repeat;
 }
 
 .our-advantage {
-  background-image: url("/img/bg11.jpg");
-}
+    position: relative;
+  }
 
+
+  .advantage-detail{
+      position: absolute;
+      top: 200px;
+      right: 150px;
+  }
+  
+.advantage-detail *{
+    text-align: end;
+}
 .features-7 .image-container {
   margin-top: 0px;
 }

@@ -2,7 +2,7 @@
     <div class="wrapper">
             <div class="page-header page-header-small">
             <parallax class="page-header-image"
-                style="background-image: url('img/bg32.jpg')">
+                :style="{ 'background-image': 'url(' + promoteImgUrl + ')' }">
             </parallax>
             <div class="content-center">
                 <div class="row">
@@ -27,7 +27,9 @@ export default {
   },
 
   data: function() {
-    return {};
+    return {
+        promoteImgUrl: "img/protel-imgs/replace_and_save_02.png",
+    };
   },
 
   props: {},
