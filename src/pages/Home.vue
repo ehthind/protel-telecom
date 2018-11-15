@@ -1,17 +1,21 @@
 <template>
     <div class="wrapper">
         <!-- start of promotion section -->
-        <div class="promotion-section">
-            <component class = "promotion-component" v-bind:is="currentPromotion"></component>
-            <div class="section-space"></div>
-            <div class="container">
-                <div class="row">
-                    <n-button type="button" class = "btn btn-info btn-lg ml-auto mr-auto"
-                    v-on:click.native = "changeCurrentPromotion"
-                >chagePromotion
-                </n-button>
-                </div>
-            </div>
+        <div class="page-header-small">
+            <el-carousel height="100vh">
+                <el-carousel-item v-for="(url, id) in promoteImgs" :key="id">
+                    <div class="page-header header-filter">
+                        <div class="page-header-image"
+                            :style = url>
+                        </div>
+                        <div class="carousel-caption">
+                            <div class="col-md-6 ml-auto mr-auto">
+                                <router-link to = "/learn" class = "btn-primary btn-lg"><i class = "fa fa-heart"></i>More info</router-link>
+                            </div>
+                        </div>
+                    </div>
+                </el-carousel-item>
+            </el-carousel>
         </div>
         <!-- end of promotion section -->
         
@@ -21,8 +25,6 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 mr-auto ml-auto text-center">
-                            
-                
                             <h3 class="description">
                                 Business Phone Service. Evolved.
                                 Small to Large Businesses Choose Dial Ready for Hosted VoiP Communications.
@@ -36,7 +38,7 @@
         <!-- end of business description -->
         
         <!-- start of get start section -->
-        <div class="section get-start-section" style="background: brown">
+        <div class="section get-start-section" style="background: white">
             <div class="features-4">
                 <div class="container-fluid get-start-container" >
                     <div class="row">
@@ -251,10 +253,12 @@
 </template>
 
 <script>
+import { Carousel, CarouselItem } from "element-ui";
+import { Button } from "@/components";
 import triplePromotions from "../pages/TriplePromotionalPictures";
 import singlePromotion from "../pages/SinglePromotionPicture";
 import plansDetails from "../pages/PlansDetails";
-import { Card, Button } from "@/components";
+import { Card } from "@/components";
 
 export default {
   components: {
@@ -262,28 +266,29 @@ export default {
     singlePromotion,
     plansDetails,
     Card,
-    [Button.name]: Button
+    [Button.name]: Button,
+    [Carousel.name]: Carousel,
+    [CarouselItem.name]: CarouselItem
   },
   data: function() {
     return {
-      currentPromotion: singlePromotion,
-      promotionSet: ["single", "triple"],
-      promotion: "single",
+      promoteImgs: [
+        'background-image: url("/img/protel-imgs/promote_01.png")', //1
+        'background-image: url("/img/protel-imgs/ip_phone_brands_01.png")', //2
+        'background-image: url("/img/protel-imgs/ip_phone_brands_02.png")', //3
+        'background-image: url("/img/protel-imgs/replace_phone.png")', //4
+        'background-image: url("/img/protel-imgs/replace_and_save_01.png")', //5
+        'background-image: url("/img/protel-imgs/replace_and_save_02.png")', //6
+        'background-image: url("/img/protel-imgs/free_phones_01.png")', //7
+        'background-image: url("/img/protel-imgs/promote_02.png")', //8
+        'background-image: url("/img/protel-imgs/free_phones_02.png")' //9
+      ],
       plansDetailsComponent: "",
       showPlansTable: false
     };
   },
   computed: {},
   methods: {
-    changeCurrentPromotion: function() {
-      if (this.promotion == "single") {
-        this.currentPromotion = triplePromotions;
-        this.promotion = "triple";
-      } else {
-        this.currentPromotion = singlePromotion;
-        this.promotion = "single";
-      }
-    },
     showPlanDetails: function() {
       this.showPlansTable = !this.showPlansTable;
       this.plansDetailsComponent = this.showPlansTable ? plansDetails : "";
@@ -297,7 +302,15 @@ export default {
   /* font-size: 20px; */
   position: relative;
 }
-
+.page-header-small ::before {
+  position: relative;
+}
+.page-header-image {
+  opacity: 0.9;
+}
+.business-description-section {
+  background: aliceblue;
+}
 .container-fluid {
   padding: 0 5%;
 }

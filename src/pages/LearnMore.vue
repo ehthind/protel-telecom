@@ -1,25 +1,5 @@
 <template>
   <div class="wrapper">
-        <!-- start of page header -->
-        <div class="header-1" :style="{'background-image': 'url(' + headerImgUrl + ')'}">
-            <div class="page-header header-filter">
-                <div class="page-header-image"></div>
-                <div class="content-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-8 ml-auto text-left">
-                                <h2 class="title">Dial Ready's could based VoiP includes every available 
-                                    feature we can think of for your business. Such as: auto attendant, 
-                                    extension to extension dialing, voicemail, call recording and more.
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end of page header -->
-
         <!-- star of our advantage section -->
         
         <div class="container-fluid our-advantage">
@@ -85,122 +65,20 @@
         <!-- start of floating options -->
         <div class="section-space"></div>
         <div class="section section-components">
-            <div class="presentation-page" :style="presentationStyle">
+            <div class="presentation-page service-presentation">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8 ml-auto mr-auto">
-                            <h2 class="text-center">
-                                ALL THE FEATURES OF A TRADITIONAL PHONE SYSTEM ADN MORE
+                        <div class="col-md-8 ml-auto mr-auto mt-5">
+                            <h2 class="text-center pt-4">
+                                ALL THE FEATURES OF A TRADITIONAL PHONE SYSTEM AND MORE
                             </h2>
                         </div>
                         <div class="space-20"></div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-8 ml-auto mr-auto">
-                            <div class="card-container first-card">
-                                <div class="card-component">
-                                    <a href="#">
-                                        <div class="front">
-                                            option 1
-                                            <card class="card card-background card-raised" data-background-color 
-                                            style="background-image: url('img/bg24.jpg')">
-                                                <div class="info">
-                                                    <div class="descrpition">
-                                                        <h4 class="info-title">option title</h4>
-                                                        <p>
-                                                            descrpition
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </card>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-8 ml-auto mr-auto">
-                            <div class="card-container second-card">
-                                <div class="card-component">
-                                    <a href="#">
-                                        <div class="front">
-                                            option 2
-                                            <card class="card card-background card-raised" data-background-color 
-                                            style="background-image: url('img/bg24.jpg')">
-                                                <div class="info">
-                                                    <div class="descrpition">
-                                                        <h4 class="info-title">option title</h4>
-                                                        <p>
-                                                            descrpition
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </card>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-8 ml-auto mr-auto">
-                            <div class="card-container third-card">
-                                <div class="card-component">
-                                    <a href="#">
-                                        <div class="front">
-                                            option 3
-                                            <card class="card card-background card-raised" data-background-color 
-                                            style="background-image: url('img/bg24.jpg')">
-                                                <div class="info">
-                                                    <div class="descrpition">
-                                                        <h4 class="info-title">option title</h4>
-                                                        <p>
-                                                            descrpition
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </card>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-8 ml-auto mr-auto">
-                            <div class="card-container forth-card">
-                                <div class="card-component">
-                                    <a href="#">
-                                        <div class="front">
-                                            option 4
-                                            <card class="card card-background card-raised" data-background-color 
-                                            style="background-image: url('img/bg24.jpg')">
-                                                <div class="info">
-                                                    <div class="descrpition">
-                                                        <h4 class="info-title">option title</h4>
-                                                        <p>
-                                                            descrpition
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </card>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-        <!-- end of floating options -->
-        <div class="presentation-page">
-            <div class="section section-basic-components">
-            <div class="container-fluid">
-                <div class="col-md-10 mx-auto">
-                    <img :src="cloudBaseOptionsImg" alt="cloud based options">
-                </div>
-            </div>
-        </div>
-        </div>
-
-        
+        <!-- end of floating options -->        
   </div>
 </template>
 
@@ -215,14 +93,12 @@ export default {
 
   data() {
     return {
-        headerImgUrl: "img/protel-imgs/learn_more_dial_ready.png",
-        ourAdvantageImg: "img/protel-imgs/learn_more_dial_ready.png",
-        cloudBaseOptionsImg: "img/protel-imgs/cloud_based_options.png",
+      headerImgUrl: "img/protel-imgs/learn_more_dial_ready.png",
+      ourAdvantageImg: "img/protel-imgs/learn_more_dial_ready.png",
       image01Path: "/img/bg38.jpg",
       bulyPhoneSystemImgPath: "/img/bg bulky complexity.jpg",
       spaceSavingImgPath: "/img/bg space saving.jpg",
-      quickAccessImgPath: "/img/bg quick access.jpg",
-      presentationStyle: "background: url('img/bg cloud base phone system.jpg')"
+      quickAccessImgPath: "/img/bg quick access.jpg"
     };
   },
 
@@ -236,18 +112,17 @@ export default {
 }
 
 .our-advantage {
-    position: relative;
-  }
+  position: relative;
+}
 
+.advantage-detail {
+  position: absolute;
+  top: 200px;
+  right: 150px;
+}
 
-  .advantage-detail{
-      position: absolute;
-      top: 200px;
-      right: 150px;
-  }
-  
-.advantage-detail *{
-    text-align: end;
+.advantage-detail * {
+  text-align: end;
 }
 .features-7 .image-container {
   margin-top: 0px;
@@ -257,5 +132,12 @@ export default {
   position: absolute;
   top: 50%;
   margin-top: -50px;
+}
+.section-components {
+  background-image: url("../../public/img/protel-imgs/cloud_based_options.png");
+  height: 100vh;
+}
+.service-card {
+  opacity: 0.5;
 }
 </style>

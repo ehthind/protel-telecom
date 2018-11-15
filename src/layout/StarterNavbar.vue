@@ -1,13 +1,12 @@
 <template>
     <navbar position="fixed" menu-classes="ml-auto" style = "background-color: #26387b">
-            <div class="navbar-translate">
-                <router-link to = "/">
-                    <img :src="companyImagePath" alt="dial-ready-logo" class="company-logo">
-                </router-link>
-            </div>
+        <div class="navbar-translate">
+            <router-link to = "/">
+                <img :src="companyImagePath" alt="dial-ready-logo" class="company-logo">
+            </router-link>
+        </div>
             
         <template slot="navbar-menu" id = "navbar">
-            
             <router-link v-popover:popover1 class="navbar-brand text-center" to="/">
                 Home
             </router-link>
@@ -23,12 +22,6 @@
              <router-link v-popover:popover1 class="navbar-brand text-center" to="/contact">
                 contact
             </router-link>
-            <drop-down tag="li" title="Sample Dropdown">
-                <nav-link class="dropdown-item">
-                    <i class="now-ui-icons shopping_box"></i> Headers
-                </nav-link>
-            </drop-down>
-
         </template>
     </navbar>
 </template>

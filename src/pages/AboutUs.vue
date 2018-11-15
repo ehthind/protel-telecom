@@ -2,8 +2,7 @@
   <div class="wrapper">
         <!-- start of page header section -->
         <div class="page-header page-header-small">
-            <parallax class="page-header-image"
-                 :style="{'background-image': 'url(' + aboutUsImg + ')'}">
+            <parallax class="page-header-image">
             </parallax>
             <div class="content-center">
                 <div class="row">
@@ -32,7 +31,7 @@
                         </h4>
                     </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-md-4">
                     <div class="info">
                         <div class="icon icon-primary icon-circle">
@@ -60,7 +59,7 @@
                             <p class="description">description</p>
                         </div>
                     </div>  
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -116,7 +115,7 @@ export default {
 
   data() {
     return {
-        aboutUsImg: "img/protel-imgs/learn_more_dial_ready.png",
+      aboutUsImg: "img/protel-imgs/learn_more_dial_ready.png",
       saleTeamImagePath: "/img/bg sales team.jpg",
       technicalSupportTeamPath: "/img/bg technical support team.png",
       customerSupportTeamPath: "/img/bg customer support team.jpg"
@@ -128,7 +127,4 @@ export default {
 </script>
 
 <style scoped>
-.features-2 {
-  background-image: url("/img/bg22.jpg");
-}
 </style>
