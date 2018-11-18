@@ -78,21 +78,23 @@
                         </div>
                     </div>
                     <div class="separator-line separator-primary"></div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <img class="rounded img-raised" alt="Raised Image" :src=teamImg04>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="rounded img-raised" alt="Raised Image" :src=teamImg02>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="rounded img-raised" alt="Raised Image" :src=teamImg05>
+                        </div>
+                    </div>
                     <div class="row">
-                        <div class="col-md-4">
-                            <img class="rounded img-raised" alt="Raised Image" :src="saleTeamImagePath">
-                        </div>
-                        <div class="col-md-4">
-                            <img class="rounded img-raised" alt="Raised Image" :src="technicalSupportTeamPath">
-                        </div>
-                        <div class="col-md-4">
-                            <img class="rounded img-raised" alt="Raised Image" :src="customerSupportTeamPath">
+                                                <div class="col-md-6">
+                            <img class="rounded img-raised" alt="Raised Image" :src=teamImg01>
                         </div>
                         <div class="col-md-6">
-                            <img class="rounded img-raised" alt="Raised Image" src="img/project6.jpg">
-                        </div>
-                        <div class="col-md-6">
-                            <img class="rounded img-raised" alt="Raised Image" src="img/project14.jpg">
+                            <img class="rounded img-raised" alt="Raised Image" :src=teamImg03>
                         </div>
                     </div>
                 </div>
@@ -115,10 +117,11 @@ export default {
 
   data() {
     return {
-      aboutUsImg: "img/protel-imgs/learn_more_dial_ready.png",
-      saleTeamImagePath: "/img/bg sales team.jpg",
-      technicalSupportTeamPath: "/img/bg technical support team.png",
-      customerSupportTeamPath: "/img/bg customer support team.jpg"
+        teamImg01: "img/bg27.jpg",
+        teamImg02: "img/bg24.jpg",
+        teamImg03: "img/bg28.jpg",
+        teamImg04: "img/project6.jpg",
+        teamImg05: "img/project14.jpg"
     };
   },
 
@@ -127,4 +130,7 @@ export default {
 </script>
 
 <style scoped>
+.page-header-image{
+    background-image: url("../../public/img/bg32.jpg");
+}
 </style>

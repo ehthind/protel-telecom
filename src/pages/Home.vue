@@ -47,8 +47,8 @@
                         </div>
                     </div>
                     <div class="row get-start-row">
-                        <div class="col-md-6 col-sm-12 col-lg-3 d-flex">
-                            <card class="card card-background card-raised" data-background-color 
+                        <div class="col-md-6 col-lg-3 d-flex">
+                            <card class="card card-background card-raised mx-5" data-background-color 
                             style="background-image: url('img/bg24.jpg')">
                                 <div class="info">
                                     <div class="icon icon-success">
@@ -68,7 +68,7 @@
                             </card>
                         </div>
                         <div class="col-md-6 col-lg-3 d-flex">
-                            <card class=" card card-background card-raised" data-background-color 
+                            <card class=" card card-background card-raised mx-5" data-background-color 
                             style="background-image: url('img/bg24.jpg')">
                                 <div class="info">
                                     <div class="icon icon-info">
@@ -88,7 +88,7 @@
                             </card>
                         </div>
                         <div class="col-md-6 col-lg-3 d-flex">
-                            <card class=" card card-background card-raised" data-background-color 
+                            <card class=" card card-background card-raised mx-5" data-background-color 
                             style="background-image: url('img/bg24.jpg')">
                                 <div class="info">
                                     <div class="icon icon-primary">
@@ -107,7 +107,7 @@
                             </card>
                         </div>
                         <div class="col-md-6 col-lg-3 d-flex">
-                            <card class=" card card-background card-raised" data-background-color 
+                            <card class=" card card-background card-raised mx-5" data-background-color 
                             style="background-image: url('img/bg24.jpg')">
                                 <div class="info">
                                     <div class="icon icon-warning">
