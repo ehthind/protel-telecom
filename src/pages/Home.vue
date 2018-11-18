@@ -47,9 +47,9 @@
                         </div>
                     </div>
                     <div class="row get-start-row">
-                        <div class="col-md-6 col-lg-3 d-flex">
-                            <card class="card card-background card-raised mx-5" data-background-color 
-                            style="background-image: url('img/bg24.jpg')">
+                        <div class="col-lg-6 col-xl-3 d-flex">
+                            <card class="card card-background card-raised" data-background-color 
+                            :style= getStartCardBg.order>
                                 <div class="info">
                                     <div class="icon icon-success">
                                         <i class="now-ui-icons shopping_cart-simple"></i>
@@ -67,19 +67,19 @@
                                 </p>
                             </card>
                         </div>
-                        <div class="col-md-6 col-lg-3 d-flex">
-                            <card class=" card card-background card-raised mx-5" data-background-color 
-                            style="background-image: url('img/bg24.jpg')">
+                        <div class="col-lg-6 col-xl-3 d-flex">
+                            <card class=" card card-background card-raised" data-background-color 
+                            :style = getStartCardBg.configuration>
                                 <div class="info">
                                     <div class="icon icon-info">
                                         <i class="now-ui-icons now-ui-icons ui-2_settings-90"></i>
                                     </div>
                                     <div class="descrpition">
-                                        <h4 class="info-title">Configeration</h4>
+                                        <h4 class="info-title">Configuration</h4>
                                         <p>
                                             Our provisioning team configures your selected VoiP phones, extensions, 
-                                        features and system. Once configured, your phonees are carefully packaged 
-                                        and ready for shipping.
+                                            features and system. Once configured, your phonees are carefully packaged 
+                                            and ready for shipping.
                                         </p>
                                     </div>
                                 </div>
@@ -87,9 +87,9 @@
                                 </p>
                             </card>
                         </div>
-                        <div class="col-md-6 col-lg-3 d-flex">
-                            <card class=" card card-background card-raised mx-5" data-background-color 
-                            style="background-image: url('img/bg24.jpg')">
+                        <div class="col-lg-6 col-xl-3 d-flex">
+                            <card class=" card card-background card-raised" data-background-color 
+                            :style = getStartCardBg.shipping>
                                 <div class="info">
                                     <div class="icon icon-primary">
                                         <i class="now-ui-icons shopping_delivery-fast"></i>
@@ -106,9 +106,9 @@
                                 </p>
                             </card>
                         </div>
-                        <div class="col-md-6 col-lg-3 d-flex">
-                            <card class=" card card-background card-raised mx-5" data-background-color 
-                            style="background-image: url('img/bg24.jpg')">
+                        <div class="col-lg-6 col-xl-3 d-flex">
+                            <card class=" card card-background card-raised" data-background-color 
+                            :style = getStartCardBg.plugAndUse>
                                 <div class="info">
                                     <div class="icon icon-warning">
                                         <i class="now-ui-icons emoticons_satisfied"></i>
@@ -117,7 +117,7 @@
                                         <h4 class="info-title">Plug & Use</h4>
                                         <p>
                                             Simply plug in each phone at the designated 
-                                        location and voila. Simple as that.
+                                            location and voila. Simple as that.
                                         </p>
                                     </div>
                                 </div>
@@ -283,6 +283,13 @@ export default {
         'background-image: url("/img/protel-imgs/promote_02.png")', //8
         'background-image: url("/img/protel-imgs/free_phones_02.png")' //9
       ],
+
+      getStartCardBg: {
+        order: "background-image: url('img/bg24.jpg')",
+        configuration: "background-image: url('img/project15.jpg')",
+        shipping: "background-image: url('img/bg38.jpg')",
+        plugAndUse: "background-image: url('img/bg27.jpg')"
+      },
       plansDetailsComponent: "",
       showPlansTable: false
     };
@@ -323,8 +330,4 @@ export default {
 .plans-details-section {
   background: mintcream;
 }
-
-/* .container {
-  max-width: 1500px;
-} */
 </style>

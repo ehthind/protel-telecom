@@ -19,47 +19,18 @@
         <!-- end of page header section -->
 
     
-        <div class="features-2 section-image">
-            <div class="container-fluid">
+        <div class="features-2 our-service section-image">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-10 ml-auto mr-auto">
+                    <div class="col-md-10 ml-auto mr-auto my-5">
                         <h2 class="title">Our Services</h2>
-                        <h4 class="description">
+                        <h3 class="description">
                             Our services are based on a new-age platform allowing scalability 
                             and solid voice solutions. It's simple you do what you do best for 
                             your business and let us handle the communication technology that we do best.
-                        </h4>
+                        </h3>
                     </div>
                 </div>
-                <!-- <div class="row">
-                    <div class="col-md-4">
-                    <div class="info">
-                        <div class="icon icon-primary icon-circle">
-                            <i class="now-ui-icons users_single-02"></i>
-                        </div>
-                        <h4 class="info-title">best 1</h4>
-                        <p class="description">description</p>
-                    </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="info">
-                            <div class="icon icon-primary icon-circle">
-                                <i class="now-ui-icons users_single-02"></i>
-                            </div>
-                            <h4 class="info-title">best 1</h4>
-                            <p class="description">description</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="info">
-                            <div class="icon icon-primary icon-circle">
-                                <i class="now-ui-icons users_single-02"></i>
-                            </div>
-                            <h4 class="info-title">best 1</h4>
-                            <p class="description">description</p>
-                        </div>
-                    </div>  
-                </div> -->
             </div>
         </div>
 
@@ -117,11 +88,11 @@ export default {
 
   data() {
     return {
-        teamImg01: "img/bg27.jpg",
-        teamImg02: "img/bg24.jpg",
-        teamImg03: "img/bg28.jpg",
-        teamImg04: "img/project6.jpg",
-        teamImg05: "img/project14.jpg"
+      teamImg01: "img/bg27.jpg",
+      teamImg02: "img/bg24.jpg",
+      teamImg03: "img/bg28.jpg",
+      teamImg04: "img/project6.jpg",
+      teamImg05: "img/project14.jpg"
     };
   },
 
@@ -130,7 +101,10 @@ export default {
 </script>
 
 <style scoped>
-.page-header-image{
-    background-image: url("../../public/img/bg32.jpg");
+.page-header-image {
+  background-image: url("../../public/img/bg32.jpg");
+}
+.our-service {
+  background-color: Teal;
 }
 </style>

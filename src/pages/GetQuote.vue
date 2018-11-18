@@ -2,7 +2,7 @@
     <div class="wrapper contact-page">
         <div class="page-header page-header-small">
             <parallax class="page-header-image"
-                 style="background-image: url('img/contactUs.jpg')">
+                 style="background-image: url('img/bg39.jpg')">
             </parallax>
         </div>
 
@@ -102,7 +102,7 @@ const env = require("env2")("./../../.env"); //no matter how I chage the path, i
 if (env) {
   console.log("env is loaded");
   console.log(process.env); //return an object, but seems to be empty
-  console.log(process.env.AWS_SECRET_ACCESS_KEY); //returned undefined, not accessible 
+  console.log(process.env.AWS_SECRET_ACCESS_KEY); //returned undefined, not accessible
 } else {
   console.log("failed to load .env file"); // as long as path is not empty, never go here
 }

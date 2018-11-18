@@ -2,7 +2,7 @@
     <div class="wrapper">
       <div class="page-header page-header-small">
           <parallax class="page-header-image"
-                style="background-image: url('img/contactUs.jpg')">
+                style="background-image: url('img/bg24.jpg')">
           </parallax>
       </div>
       <div class="section contact-us-section">
@@ -16,10 +16,9 @@
                         <div class="col-md-6 d-flex">
                             <card type="background" class="picture-of-phone" raised rounded
                                   style="background-image: url('img/project8.jpg')">
-                                <h2 class="card-title">Should be a picture of phone</h2>
+                                
                                 <p class="card-description">
                                 </p>
-                                <badge type="neutral">Analytics</badge>
                             </card>
                         </div>
                         <div class="col-md-6">
@@ -116,7 +115,7 @@
                         </div><br>
                         <div class="form-group">
                           <label for = "comment">Comments</label>
-                          <textarea name="message" v-model="comments" class="form-control" id="comment" form-groups="6"></textarea>
+                          <textarea name="message" v-model="comments" class="form-control" id="comment" form-groups="6" placeholder="Leave your comment here"></textarea>
                         </div>
                         <div class="submit text-center">
                           <h5><n-button type = "primary" round @click.native = "submitContactForm"> Submit </n-button></h5>
